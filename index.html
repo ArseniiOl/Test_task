@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="section-popup">
+    <div class="container">
+        <div id="pop-up-0" class="overlay">
+            <div class="pop-up">
+                <div class="pop-up__header"></div>
+                <div class="pop-up__content">
+                    Привіт, пройди швидке опитування!
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pop-up-1" class="pop-up-first">
+            <div class="pop-up">
+                <div class="pop-up__header"></div>
+
+                <div class="pop-up__content">
+
+                    <form class="pop-up-form" action="#">
+                        <label for="name" class="pop-up-form__label">Як тебе звати?</label>
+                        <input type="text" class="pop-up-form__input" id="name">
+                    </form>
+
+                </div>
+
+                <a href="#pop-up-2" class="pop-up__button">
+                    Далі
+                </a>
+            </div>
+        </div>
+
+        <div id="pop-up-2" class="pop-up-next">
+            <div class="pop-up">
+                <div class="pop-up__header"></div>
+
+                <div class="pop-up__content">
+
+                    <form class="pop-up-form" action="#">
+                        <label for="age" class="pop-up-form__label">Скільки тобі років?</label>
+                        <select name="" id="age" class="pop-up-form__dropdown"></select>
+
+                    </form>
+
+                </div>
+
+                <a href="#pop-up-3" class="pop-up__button">
+                    Далі
+                </a>
+            </div>
+        </div>
+
+        <div id="pop-up-3" class="pop-up-next">
+            <div class="pop-up">
+                <div class="pop-up__header"></div>
+
+                <div class="pop-up__content">
+
+                    <form class="pop-up-form" action="#">
+                        <label class="pop-up-form__label">Подобається тобі наш сайт? </label>
+
+                        <div class="pop-up-form__radio-group">
+
+                            <input type="radio" id="choice1" value="yes" class="pop-up-form__radio">
+                            <label for="choice1" class="pop-up-form__radio-label">Так</label>
+
+                            <input type="radio" id="choice2" value="no" class="pop-up-form__radio">
+                            <label for="choice2" class="pop-up-form__radio-label">Ні</label>
+                        </div>
+                    </form>
+
+                </div>
+
+                <a href="https://approachx.com" class="pop-up__button">
+                    Закінчити
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="script/main.js"></script>
+</body>
+</html>
